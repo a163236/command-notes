@@ -1,4 +1,10 @@
 {
+  "publisher": "a163236",
+  "repository": {
+    "url": "https://github.com/a163236/command-notes",
+    "type": "git",
+    "branch": "main"
+  },
   "name": "command-notes",
   "displayName": "command-notes",
   "description": "A VSCode extension that memorize your favorite commands and execute them easily",
@@ -27,7 +33,8 @@
       "command-notes-container": [
         {
           "id": "commandNotes",
-          "name": "My Commands"
+          "name": "My Commands",
+          "icon": "$(terminal)"
         }
       ]
     },
