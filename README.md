@@ -2,6 +2,9 @@
 
 A VSCode extension that helps you manage and execute frequently used commands from a convenient side panel.
 
+![alt text](<recording 2025-12-09 181256.gif>)
+
+
 ## Features
 
 ### 📋 Command Management
@@ -80,32 +83,6 @@ A VSCode extension that helps you manage and execute frequently used commands fr
 **Delete:**
 - Right-click → "Delete"
 - Confirms before deleting groups with children
-
-## Example Use Cases
-
-### Docker Commands
-```
-📁 Docker
-  🔧 Start → docker-compose up -d
-  🔧 Stop → docker-compose down
-  🔧 Logs → docker-compose logs -f
-```
-
-### Git Workflows
-```
-📁 Git
-  🔧 Status → git status
-  🔧 Pull → git pull origin main
-  🔧 Push → git push origin main
-```
-
-### Build Scripts
-```
-📁 Build
-  🔧 Install → npm install
-  🔧 Build → npm run build
-  🔧 Test → npm test
-```
 
 ## Development
 
