@@ -8,7 +8,7 @@
   "name": "command-notes",
   "displayName": "command-notes",
   "description": "A VSCode extension that memorize your favorite commands and execute them easily",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "engines": {
     "vscode": "^1.103.0"
   },
