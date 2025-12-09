@@ -2,7 +2,7 @@
 
 A VSCode extension that helps you manage and execute frequently used commands from a convenient side panel.
 
-![Command Notes Demo](./demo.gif)
+![Command Notes Demo](https://raw.githubusercontent.com/a163236/command-notes/master/demo.gif)
 
 
 ## Features
