@@ -47,10 +47,10 @@ export class CommandHandler {
      */
     async addCommand(parentNode?: TreeNode): Promise<void> {
         // If parent is provided, it must be a group
-        if (parentNode && !isCommandGroup(parentNode)) {
-            vscode.window.showWarningMessage('Commands can only be added to groups or root level');
-            return;
-        }
+        // if (parentNode && !isCommandGroup(parentNode)) {
+        //     vscode.window.showWarningMessage('Commands can only be added to groups or root level');
+        //     return;
+        // }
 
         const command = await vscode.window.showInputBox({
             prompt: 'Enter command to execute',

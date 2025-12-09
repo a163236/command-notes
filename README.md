@@ -125,9 +125,9 @@ npm run watch
 ## Storage Location
 
 Commands are stored in VSCode's global storage:
-- **Linux**: `~/.config/Code/User/globalStorage/command-notes/`
-- **macOS**: `~/Library/Application Support/Code/User/globalStorage/command-notes/`
-- **Windows**: `%APPDATA%\Code\User\globalStorage\command-notes\`
+- **Linux**: `~/.config/Code/User/globalStorage/state.vscdb`
+- **macOS**: `~/Library/Application Support/Code/User/globalStorage/state.vscdb`
+- **Windows**: `%APPDATA%\Code\User\globalStorage\state.vscdb`
 
 ## License
 
