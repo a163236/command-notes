@@ -46,11 +46,16 @@ export class CommandHandler {
      * Add a new command
      */
     async addCommand(parentNode?: TreeNode): Promise<void> {
+        // If parent is provided and it is a command item, use its parent instead
+        if (parentNode && isCommandItem(parentNode)) {
+            parentNode = (this.treeProvider.getParent(parentNode) as TreeNode | null) || undefined;
+        }
+
         // If parent is provided, it must be a group
-        // if (parentNode && !isCommandGroup(parentNode)) {
-        //     vscode.window.showWarningMessage('Commands can only be added to groups or root level');
-        //     return;
-        // }
+        if (parentNode && !isCommandGroup(parentNode)) {
+            vscode.window.showWarningMessage('Commands can only be added to groups or root level');
+            return;
+        }
 
         const command = await vscode.window.showInputBox({
             prompt: 'Enter command to execute',
@@ -72,6 +77,11 @@ export class CommandHandler {
      * Add a new group
      */
     async addGroup(parentNode?: TreeNode): Promise<void> {
+        // If parent is provided and it is a command item, use its parent instead
+        if (parentNode && isCommandItem(parentNode)) {
+            parentNode = (this.treeProvider.getParent(parentNode) as TreeNode | null) || undefined;
+        }
+
         // If parent is provided, it must be a group
         if (parentNode && !isCommandGroup(parentNode)) {
             vscode.window.showWarningMessage('Groups can only be added to other groups or root level');
