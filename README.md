@@ -109,3 +109,7 @@ Commands are stored in VSCode's global storage:
 ## License
 
 See LICENSE file for details.
+
+## Links to the extension
+- https://marketplace.visualstudio.com/items?itemName=a163236.command-notes
+- https://open-vsx.org/extension/a163236/command-notes
