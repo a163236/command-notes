@@ -110,15 +110,6 @@ export class CommandHandler {
             return;
         }
 
-        const label = await vscode.window.showInputBox({
-            prompt: 'Enter new label',
-            value: node.label
-        });
-
-        if (!label) {
-            return;
-        }
-
         const command = await vscode.window.showInputBox({
             prompt: 'Enter new command',
             value: node.command
@@ -128,12 +119,10 @@ export class CommandHandler {
             return;
         }
 
-        const description = await vscode.window.showInputBox({
-            prompt: 'Enter new description (optional)',
-            value: node.description || ''
-        });
+        // Use the command itself as the label
+        const label = command;
 
-        await this.treeProvider.updateNode(node.id, { label, command, description });
+        await this.treeProvider.updateNode(node.id, { label, command });
         vscode.window.showInformationMessage(`Command "${label}" updated successfully`);
     }
 
